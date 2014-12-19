@@ -6,3 +6,8 @@ dependencies:
 test:
   pre:
     - python setup.py install
+  override:
+    - coverage run -p --source . `which nosetests`
+  post:
+    - coverage combine
+    - coverage report
