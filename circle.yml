@@ -6,7 +6,3 @@ dependencies:
 test:
   pre:
     - python setup.py install
-  override:
-    - nosetests --with-coverage --cover-package=mailpile
-  post:
-    - coverage report
