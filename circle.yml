@@ -1,0 +1,6 @@
+test:
+  pre:
+    - pip install coverage coveralls nose
+  override:
+    - python setup.py install
+    - nosetests tests --with-coverage --cover-package=mailpile
